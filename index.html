@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Web Visualization Dashboard (Latitude)</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,9 +22,9 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="Pages/temp.html">Temperature</a>
+                                <a class="dropdown-item" href="Pages/humid.html">Humidity</a>
                                 <a class="dropdown-item" href="Pages/cloud.html">Cloudiness</a>
                                 <a class="dropdown-item" href="Pages/wind.html">Wind Speed</a>
-                                <a class="dropdown-item" href="Pages/humid.html">Humidity</a>
                             </div>
                         </li>
                     <li class="nav-item">
@@ -43,7 +43,7 @@
                     <div class="field">
                         <h1>Summary: Latitude vs. X</h1>
                         <hr>
-                        <img class="profile float-left" src="Images/Fig1.png" alt="temperature">
+                        <img class="profile float-left" src="Images/Fig1.png" alt="Temperature">
                         <p>
                             The purpose of this project was to analyze how weather changes 
                             as you get closer to the equator. To accomplish this analysis, 
@@ -69,41 +69,41 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="#">
+                                    <a href="Pages/temp.html">
                                     <img src="Images/Fig1.png" class="overlay" alt="Temperature">
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#">
-                                    <img src="Images/Fig2.png" class="overlay" alt="Cloudiness">
+                                    <a href="Pages/cloud.html">
+                                    <img src="Images/Fig2.png" class="overlay" alt="Humidity">
                                     </a>
                                 </div>
                             </div>
                             <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">
-                                        <img src="Images/Fig3.png" class="overlay" alt="Wind Speed">
-                                        </a>
-                                    </div>
-                                    <div class="col-6">
-                                        <a href="#">
-                                        <img src="Images/Fig4.png" class="overlay" alt="Humidity">
-                                        </a>
-                                    </div>
+                                <div class="col-6">
+                                    <a href="Pages/wind.html">
+                                    <img src="Images/Fig3.png" class="overlay" alt="Cloudiness">
+                                    </a>
                                 </div>
+                                <div class="col-6">
+                                    <a href="Pages/humid.html">
+                                    <img src="Images/Fig4.png" class="overlay" alt="Wind Speed">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <footer class="footer">
+        <footer class="footer mt-auto py-3">
             <div class="container">
-                <span class="text-muted">Place sticky footer content here.</span>
+                <span class="text-muted">© Copyright Soo Bin Hwang 2019</span>
             </div>
         </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
