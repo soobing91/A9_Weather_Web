@@ -28,7 +28,6 @@ img {
 
 footer {
     background-color: rgb(53, 58, 63);
-    color: rgb(106, 106, 106);
     width: 100%;
     left: 0;
     bottom: 0;
@@ -38,4 +37,10 @@ footer {
 
 h3 {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .bg-dark {
+        background-color: gray !important;
+    }
 }
